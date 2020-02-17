@@ -1,7 +1,8 @@
-def get_user_info(name, surname, y_o_b, city, email):
-    return f'{name} {surname} живет в городе {city}, ' \
-           f'год рождения - {y_o_b}, email - {email}.'
+def get_user_info(**kwargs):
+    my_list = []
+    for args in kwargs.values():
+        my_list.append(str(args))
+    return ' '.join(my_list)
 
 
-print(get_user_info(surname = 'Петров', city = 'Москва',
-                    y_o_b = 1985, name = 'Михаил', email = 'm@pet.ru'))
+print(get_user_info(surname = 'Петров', name = 'Михаил', city = 'Москва',year = 1985, email = 'm@pet.ru'))
