@@ -1,4 +1,4 @@
-with open('task_2_file.txt', 'r', encoding = 'utf-8') as my_file:
+with open('task_2_file.txt', 'r', encoding='utf-8') as my_file:
     qty_lines = len(my_file.readlines())
     print(f'Количество строк в файле {my_file.name} - {qty_lines}.')
     my_file.seek(0)
