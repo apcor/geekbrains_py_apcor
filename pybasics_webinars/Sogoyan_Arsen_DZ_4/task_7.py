@@ -2,8 +2,10 @@ import math
 
 
 def fact(n):
+    y = 1
     for el in range(1, n+1):
-        yield math.factorial(el)
+        y *= el
+        yield y
 
 
 check_int = 15

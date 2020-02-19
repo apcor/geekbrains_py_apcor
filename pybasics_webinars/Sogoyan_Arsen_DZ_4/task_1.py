@@ -1,8 +1,9 @@
 import sys
 
-def income_calc(hours, wage, *args):
-        income = float(hours) * float(wage) + float(*args)
-        print(income)
+
+def income_calc(hours, wage, bonus = 0):
+    income = float(hours) * float(wage) + float(bonus)
+    print(income)
 
 
 try:
